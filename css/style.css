@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.layout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: "header header" "nav main" "footer footer";
+    grid-template-columns: 60px auto;
+    grid-template-rows: 50px auto 100px;
+}
+
+header {
+    background-color: #2F3871;
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+main {
+    background-color: #ECF0F5;
+    grid-area: main;
+    padding: 30px;
+}
+
+footer {
+    background-color: #101010;
+    color: #fff;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__header {
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box__header > .logo__box_header {
+    margin-right: 40px;
+}
+
+.card__alert {
+    background-color: #6cbdb5;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;   
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container__graphics {
+    margin-top: 5px;
+}
+
+.cards__container_graphics {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.cards__container_graphics > .card {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 100px;
+    display: flex;
+}
+
+.cards__container_graphics > .card > .logo__card {
+    width: 100px;
+    background-color: #2F3871;
+    color: #fff;
+    display: grid;
+    place-content: center;    
+}
+
+.cards__container_graphics > .card > .logo__card > span {
+    font-size: 64px;
+}
+
+
+
+
+.cards__container_graphics > .card > .desc__card {
+    background-color: #fff;
+    width: 300px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.cards__container_graphics > .card > .desc__card .barra_ocupacao {
+    height: 4px;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.cards__container_graphics > .card > .desc__card .barra_ocupacao > div {
+    height: 4px;
+    background-color: #2F3871;
+}
+
+
+.graph__container_graphics {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.graph__container_graphics > .graphic{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+nav > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav .material-symbols-outlined {
+    font-size: 32px !important;
+    color: #535353;
+    cursor: pointer;
+}
+
+
+/** ZingChart */
+.myChart {
+    height: 100%;
+    width: 100%;
+    min-height: 350px;
+  }
+   
+  .zc-ref {
+    display: none;
+  }
